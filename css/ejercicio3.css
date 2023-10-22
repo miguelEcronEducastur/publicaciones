@@ -1,0 +1,182 @@
+@import "reset.css";
+@font-face {
+  font-family: "WixMadeforText-Regular";
+  src: url(./fonts/WixMadeforText-Regular.ttf);
+}
+@font-face {
+  font-family: "Ruluko-Regular";
+  src: url(./fonts/Ruluko-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #525C59;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #72b09e;
+  color: white;
+  font-family: "WixMadeforText-Regular";
+  text-align: center;
+}
+
+nav ul {
+  background-color: #f1fcfa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  flex-basis: 100%;
+  padding: 1em;
+  transition: 0.3s linear;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "WixMadeforText-Regular";
+}
+nav ul li:hover {
+  background-color: rgb(255, 224, 0);
+  color: white;
+}
+
+.banner {
+  align-items: center;
+  background-image: url("https://http2.mlstatic.com/D_NQ_NP_957129-MLA54514594896_032023-F.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  justify-content: center;
+}
+.banner h1 {
+  background-color: rgba(196, 219, 219, 0.4);
+  color: #f1fcfa;
+  flex-basis: 100%;
+  font-family: "WixMadeforText-Regular";
+  font-size: 4em;
+  text-align: center;
+}
+
+main {
+  align-self: center;
+  background-color: #f1fcfa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: 90%;
+}
+main section {
+  background-color: rgb(255, 224, 0);
+  color: #f1fcfa;
+  flex-basis: 100%;
+  font-family: "WixMadeforText-Regular";
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: center;
+}
+main .card {
+  box-shadow: 0.2em 0.2em 0.5em 0.1em;
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 0.3s linear;
+}
+main .card .img_container {
+  background-color: #aeebdb;
+  height: 100%;
+}
+main .card .img_container img {
+  width: 100%;
+  height: 100%;
+}
+main .card .descripcion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .card .descripcion .title {
+  background-color: #aeebdb;
+  font-family: "WixMadeforText-Regular";
+  font-size: 1em;
+  min-height: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .card .descripcion .pie {
+  border: 1px solid black;
+  text-align: center;
+  font-family: "Ruluko-Regular";
+  font-size: 0.8em;
+}
+main .card:hover {
+  scale: 105%;
+}
+main .card:hover .title {
+  color: white;
+}
+
+footer {
+  background-color: #72b09e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+footer p {
+  padding-left: 1em;
+  font-family: "WixMadeforText-Regular";
+}
+footer .rrss ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 2em;
+  list-style: none;
+  gap: 0.5em;
+}
+footer .rrss ul li {
+  transition: 0.2s linear;
+}
+footer .rrss ul li:hover {
+  scale: 150%;
+}
+
+#boton-arriba {
+  background-color: rgb(255, 224, 0);
+  border-radius: 5px;
+  bottom: 3.6em;
+  padding: 0.5em 0.5em;
+  position: fixed;
+  right: 1em;
+}
+#boton-arriba a i {
+  color: white;
+  transition: 0.3s linear;
+}
+#boton-arriba a i:hover {
+  color: black;
+}
+
+.oculto {
+  display: none;
+}
